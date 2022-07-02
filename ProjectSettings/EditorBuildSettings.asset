@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/#FastBalls/Scenes/AppInitialize Scene.unity
+    guid: 56d097b7172a8403f92ec34d5aaacd9d
+  - enabled: 1
+    path: Assets/#FastBalls/Scenes/AppLoading Scene.unity
+    guid: ab4ea8a5172ad4e1fb1ee01cfc196e7e
+  - enabled: 1
+    path: Assets/#FastBalls/Scenes/Gameplay Scene.unity
+    guid: 0d58c2272cae54b8bb178980ebc359e1
   m_configObjects: {}
