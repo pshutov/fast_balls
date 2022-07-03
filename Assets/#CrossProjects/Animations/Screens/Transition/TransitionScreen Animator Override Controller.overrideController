@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TransitionScreen Animator Override Controller
+  m_Controller: {fileID: 9100000, guid: b905907944787443a9a739efcc81b012, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 8ee5d68e6de8a4d20a1619cf61e68eae, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d16ea52853dc443a964dc8cea24e2f8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a9d780559c39f46858a87e5d9b5959c6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 55472a03fc34642218fbfa1b27fcc708, type: 2}

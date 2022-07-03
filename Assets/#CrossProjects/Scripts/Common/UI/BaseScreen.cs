@@ -24,12 +24,12 @@ namespace _CrossProjects.Common.UI
         private AnimationCallbacksHandler m_animationCallbacksHandler = null;
 
 
-        private bool m_destroing = false;
+        private bool m_destroyed = false;
         
         
         public States State { get; private set; } = States.NONE;
-        
-        
+
+
         protected void Awake()
         {
             if (State == States.NONE)
@@ -41,7 +41,7 @@ namespace _CrossProjects.Common.UI
 
         protected void OnDestroy()
         {
-            m_destroing = true;
+            m_destroyed = true;
         }
 
         protected virtual void OnEnable()
@@ -65,17 +65,17 @@ namespace _CrossProjects.Common.UI
             
             if (!animated)
             {
-                m_animator.Play(AnimationsProperties.Show, -1, 1);
+                m_animator.Play(AnimationsProperties.Show, -1, 1f);
             }
             else
             {
-                m_animator.Play(AnimationsProperties.Show, -1);
+                m_animator.Play(AnimationsProperties.Show, -1, 0f);
             }
         }
 
         protected void Hide(bool animated)
         {
-            if (m_destroing)
+            if (m_destroyed)
             {
                 return;
             }
@@ -86,11 +86,11 @@ namespace _CrossProjects.Common.UI
             
             if (!animated)
             {
-                m_animator.Play(AnimationsProperties.Hide, -1, 1);
+                m_animator.Play(AnimationsProperties.Hide, -1, 1f);
             }
             else
             {
-                m_animator.Play(AnimationsProperties.Hide, -1);
+                m_animator.Play(AnimationsProperties.Hide, -1, 0f);
             }
         }
 
